@@ -1,46 +1,23 @@
 ```mermaid
-
 graph TD
-
-&nbsp;   subgraph Nivel 1: Clientes
-
-&nbsp;       A\[Dispositivos Personales / Móviles]
-
+&nbsp;   subgraph Tier 1: User view and controls
+&nbsp;       A\[Personal computers or mobile devices]
 &nbsp;   end
-
-
 
 &nbsp;   subgraph " "
-
-&nbsp;       B\[Bus de Mensajes / Broker]
-
+&nbsp;       B\[Message Broker (Pub/Sub System)]
 &nbsp;   end
 
-
-
-&nbsp;   subgraph Nivel 2: Servidor de Aplicación
-
-&nbsp;       C\[Lógica de Aplicación]
-
+&nbsp;   subgraph Tier 2: Application server
+&nbsp;       C\[Application logic]
 &nbsp;   end
 
-
-
-&nbsp;   subgraph Nivel 3: Servidor de Base de Datos
-
-&nbsp;       D\[Gestor de Base de Datos]
-
+&nbsp;   subgraph Tier 3: Database server
+&nbsp;       D\[Database manager]
 &nbsp;   end
 
-
-
-&nbsp;   A -- Publica evento --> B
-
-&nbsp;   B -- Entrega evento --> C
-
-&nbsp;   C -- Publica resultado --> B
-
-&nbsp;   B -- Entrega resultado --> D
-
+&nbsp;   A -- Publica nou event --> B
+&nbsp;   B -- Entrega nou event --> C
+&nbsp;   C -- Publica resultat nou event --> B
+&nbsp;   B -- Entrega resultat nou event --> D
 ```
-
