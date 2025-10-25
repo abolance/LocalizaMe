@@ -5,7 +5,7 @@ A\[Personal computers or mobile devices]
 end
 
 subgraph " "
-B\[Message Broker (PubSub System)]
+B\[Message Broker Pub/Sub System]
 end
 
 subgraph Tier 2: Application server
@@ -21,5 +21,6 @@ end
 &nbsp;   C -- Publica resultat nou event --> B
 &nbsp;   B -- Entrega resultat nou event --> D
 ```
+
 
 
