@@ -1,17 +1,17 @@
 ```mermaid
 graph LR
-    subgraph Clients T1-Global
+    subgraph Clients T1
         C1["Client Mòbil"]
         C2["Client Web"]
         C3["..."]
     end
 
-    subgraph Edge_Services T2-Global
+    subgraph API Gateway T2
         G1["Gateway/Balancer<br>Regió A"]
         G2["Gateway/Balancer<br>Regió B"]
     end
 
-    subgraph Logic_Cluster T3-Lògica de Joc
+    subgraph Cluster Lògica del Joc T3
         LGA["Microservei Lògica de Joc<br>- Zona A"]
         LGB["Microservei Lògica de Joc<br>- Zona B"]
     end
@@ -22,7 +22,7 @@ graph LR
         COORD["Servidor de Coordinació<br>Distribuïda"]
     end
 
-    subgraph Data_Layer T4-Persistència
+    subgraph Persistència DistribuÏda T4
         DCACHE["Cache Distribuïda"]
         DDB["NoSQL Distribuïda Sharded<br>- Estat Joc/Missatges"]
         RDB["DB Relacional -<br>Perfils/Transaccions<br>Atòmiques"]
@@ -45,3 +45,4 @@ graph LR
     G1 & G2 <--> COORD
     LGA & LGB <--> COORD
 ```
+
