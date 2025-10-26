@@ -24,8 +24,8 @@ graph LR
 
     subgraph Persistència DistribuÏda T4
         DCACHE["Cache Distribuïda"]
-        DDB["NoSQL Distribuïda Sharded<br>- Estat Joc/Missatges"]
-        RDB["DB Relacional -<br>Perfils/Transaccions<br>Atòmiques"]
+        DDB["DB Distribuïda <br>- Estat Joc/Missatges"]
+        RDB["DB Relacional -<br>Perfils/Transaccions"]
     end
 
     %% --- Conexiones del Flujo Principal ---
@@ -45,4 +45,5 @@ graph LR
     G1 & G2 <--> COORD
     LGA & LGB <--> COORD
 ```
+
 
