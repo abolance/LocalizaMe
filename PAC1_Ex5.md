@@ -12,20 +12,20 @@ graph LR
     end
 
     subgraph Cluster Lògica del Joc T3
-        LGA["Microservei Lògica de Joc<br>- Zona A"]
-        LGB["Microservei Lògica de Joc<br>- Zona B"]
+        LGA["Microservei Lògica de Joc<br>Zona A"]
+        LGB["Microservei Lògica de Joc<br>Zona B"]
     end
     
     subgraph Infrastructure
         style Infrastructure fill:#f2f2f2,stroke:#333,stroke-width:2px
-        PSB["Servei Publicació-<br>Subscripció / Multicast"]
+        PSB["Servei Publicació<br>Subscripció"]
         COORD["Servidor de Coordinació<br>Distribuïda"]
     end
 
     subgraph Persistència DistribuÏda T4
         DCACHE["Cache Distribuïda"]
-        DDB["DB Distribuïda <br>- Estat Joc/Missatges"]
-        RDB["DB Relacional -<br>Perfils/Transaccions"]
+        DDB["DB Distribuïda<br>Estat Joc/Missatges"]
+        RDB["DB Relacional<br>Perfils/Transaccions"]
     end
 
     %% --- Conexiones del Flujo Principal ---
@@ -45,5 +45,6 @@ graph LR
     G1 & G2 <--> COORD
     LGA & LGB <--> COORD
 ```
+
 
 
