@@ -12,8 +12,8 @@ G2\[Gateway/Balancer Regió B]
 end
 
 subgraph Infrastructure Capa de Comunicació i Coordinació
-PSB Servei Publicació-Subscripció / Multicast
-COORD Servidor de Coordinació Distribuïda
+PSB\[Servei Publicació-Subscripció / Multicast]
+COORD\[Servidor de Coordinació Distribuïda]
 end
 
 subgraph Logic\_Cluster T3-Lògica de Joc Particionada
@@ -48,6 +48,7 @@ LGB \&lt;--\&gt; RDB
 LGA \&lt;--\&gt; COORD
 LGB \&lt;--\&gt; COORD
 ```
+
 
 
 
