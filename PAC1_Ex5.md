@@ -1,12 +1,12 @@
 ```mermaid
 graph TD
-subgraph Clients (T1 - Global)
+subgraph Clients (T1 Global)
 C1\[Client Mòbil]
 C2\[Client Web]
 C3\[...]
 end
 
-subgraph Edge\_Services (T2 - Global Gateway)
+subgraph Edge\_Services (T2 Global Gateway)
 G1\[Gateway/Balancer (Regió A)]
 G2\[Gateway/Balancer (Regió B)]
 end
@@ -48,4 +48,5 @@ LGB \&lt;--\&gt; RDB
 LGA \&lt;--\&gt; COORD
 LGB \&lt;--\&gt; COORD
 ```
+
 
