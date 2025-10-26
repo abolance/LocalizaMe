@@ -13,7 +13,7 @@ end
 
 subgraph Infrastructure\_Middleware Capa de Comunicació i Coordinació
 PSB Servei Publicació-Subscripció / Multicast
-COORD Servidor de Coordinació Distribuïda: ex. Chubby/etcd
+COORD Servidor de Coordinació Distribuïda
 end
 
 subgraph Logic\_Cluster T3-Lògica de Joc Particionada
@@ -37,7 +37,7 @@ LGA --\&gt; PSB
 LGB --\&gt; PSB
 PSB --\&gt; LGA
 PSB --\&gt; LGB
-PSB --\&gt; DDB(Escriptura de logs/missatges)
+PSB --\&gt; DDB Escriptura de logs/missatges
 
 LGA \&lt;--\&gt; DCACHE
 LGB \&lt;--\&gt; DCACHE
@@ -48,6 +48,7 @@ LGB \&lt;--\&gt; RDB
 LGA \&lt;--\&gt; COORD
 LGB \&lt;--\&gt; COORD
 ```
+
 
 
 
