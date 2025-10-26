@@ -28,26 +28,27 @@ DDB\[NoSQL Distribuïda Sharded - Estat Joc/Missatges]
 RDB\[DB Relacional - Perfils/Transaccions Atòmiques]
 end
 
-C1 --\&gt; G1
-C2 --\&gt; G2
-G1 --\&gt; LGA
-G2 --\&gt; LGB
+C1 --\ G1
+C2 --\ G2
+G1 --\ LGA
+G2 --\ LGB
 
-LGA --\&gt; PSB
-LGB --\&gt; PSB
-PSB --\&gt; LGA
-PSB --\&gt; LGB
-PSB --\&gt; DDB Escriptura de logs/missatges
+LGA --\ PSB
+LGB --\ PSB
+PSB --\ LGA
+PSB --\ LGB
+PSB --\ DDB Escriptura de logs/missatges
 
-LGA \&lt;--\&gt; DCACHE
-LGB \&lt;--\&gt; DCACHE
+LGA \&lt;--\ DCACHE
+LGB \&lt;--\ DCACHE
 
-DCACHE --\&gt; DDB
-LGA \&lt;--\&gt; RDB
-LGB \&lt;--\&gt; RDB
-LGA \&lt;--\&gt; COORD
-LGB \&lt;--\&gt; COORD
+DCACHE --\ DDB
+LGA \&lt;--\ RDB
+LGB \&lt;--\ RDB
+LGA \&lt;--\ COORD
+LGB \&lt;--\ COORD
 ```
+
 
 
 
