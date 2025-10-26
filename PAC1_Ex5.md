@@ -17,15 +17,15 @@ COORD\[Servidor de Coordinació Distribuïda]
 end
 
 subgraph Logic\_Cluster T3-Lògica de Joc Particionada
-direction LR
-LGA Microservei Lògica de Joc - Zona A
-LGB Microservei Lògica de Joc - Zona B
+LR\[direction]
+LGA\[Microservei Lògica de Joc - Zona A]
+LGB\[Microservei Lògica de Joc - Zona B]
 end
 
 subgraph Data\_Layer T4-Persistència Distribuïda
 DCACHE\[Cache Distribuïda]
-DDB NoSQL Distribuïda Sharded - Estat Joc/Missatges
-RDB DB Relacional - Perfils/Transaccions Atòmiques
+DDB\[NoSQL Distribuïda Sharded - Estat Joc/Missatges]
+RDB\[DB Relacional - Perfils/Transaccions Atòmiques]
 end
 
 C1 --\&gt; G1
@@ -48,6 +48,7 @@ LGB \&lt;--\&gt; RDB
 LGA \&lt;--\&gt; COORD
 LGB \&lt;--\&gt; COORD
 ```
+
 
 
 
