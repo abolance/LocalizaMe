@@ -1,6 +1,6 @@
 ```mermaid
 graph TD
-subgraph Clients (T1 Global)
+subgraph Clients T1-Global
 C1\[Client Mòbil]
 C2\[Client Web]
 C3\[...]
@@ -48,5 +48,6 @@ LGB \&lt;--\&gt; RDB
 LGA \&lt;--\&gt; COORD
 LGB \&lt;--\&gt; COORD
 ```
+
 
 
