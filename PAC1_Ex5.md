@@ -27,27 +27,8 @@ DCACHE\[Cache Distribuïda]
 DDB\[NoSQL Distribuïda Sharded - Estat Joc/Missatges]
 RDB\[DB Relacional - Perfils/Transaccions Atòmiques]
 end
-
-C1 --\ G1
-C2 --\ G2
-G1 --\ LGA
-G2 --\ LGB
-
-LGA --\ PSB
-LGB --\ PSB
-PSB --\ LGA
-PSB --\ LGB
-PSB --\ DDB Escriptura de logs/missatges
-
-LGA \&lt;--\ DCACHE
-LGB \&lt;--\ DCACHE
-
-DCACHE --\ DDB
-LGA \&lt;--\ RDB
-LGB \&lt;--\ RDB
-LGA \&lt;--\ COORD
-LGB \&lt;--\ COORD
 ```
+
 
 
 
