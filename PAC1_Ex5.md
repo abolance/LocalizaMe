@@ -11,7 +11,7 @@ G1\[Gateway/Balancer Regió A]
 G2\[Gateway/Balancer Regió B]
 end
 
-subgraph Infrastructure\_Middleware Capa de Comunicació i Coordinació
+subgraph Infrastructure Capa de Comunicació i Coordinació
 PSB Servei Publicació-Subscripció / Multicast
 COORD Servidor de Coordinació Distribuïda
 end
@@ -48,6 +48,7 @@ LGB \&lt;--\&gt; RDB
 LGA \&lt;--\&gt; COORD
 LGB \&lt;--\&gt; COORD
 ```
+
 
 
 
