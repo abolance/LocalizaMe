@@ -28,8 +28,8 @@ graph LR
     end
 
     %% --- Conexiones del Flujo Principal ---
-    C1 & C2 & C3 --> G1
-    C1 & C2 & C3 --> G2
+    C1 & C2 --> G1
+    C1 & C2 --> G2
     
     G1 --> LGA
     G2 --> LGB
@@ -43,4 +43,5 @@ graph LR
     
     G1 & G2 <--> COORD
     LGA & LGB <--> COORD
+
 ```
