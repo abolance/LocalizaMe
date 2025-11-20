@@ -1,19 +1,19 @@
 ```mermaid
     graph LR
     subgraph "Flux d'Interacció"
-        U[Resource Owner (Usuari)]
-        C[Client (Aplicació)]
+        U[Resource Owner - Usuari]
+        C[Client - Aplicació]
         AS[Authorization Server]
-        RS[Resource Server (API)]
+        RS[Resource Server - API]
     end
 
     U -- "1. L'usuari inicia l'acció" --> C
     C -- "2. Redirecciona l'usuari per a l'autorització" --> AS
     U -- "3. S'autentica i dona consentiment" --> AS
-    AS -- "4. Envia Codi d'Autorització<br/>(via navegador de l'usuari)" --> C
+    AS -- "4. Envia Codi d'Autorització<br/>via navegador de l'usuari" --> C
     
-    subgraph "Canal Segur (Back-Channel)"
-        C_backend[Client (Backend)]
+    subgraph "Canal Segur - Back-Channel"
+        C_backend[Client - Backend]
         AS_backend[Authorization Server]
     end
     
