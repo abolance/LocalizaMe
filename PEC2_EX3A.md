@@ -1,4 +1,4 @@
-sequenceDiagram
+```mermaid
     actor User as "Resource Owner (Usuari)"
     participant Client as "Client (Aplicació de Tercers)"
     participant AuthServer as "Authorization Server"
@@ -23,3 +23,4 @@ sequenceDiagram
     %% 8. Accés al recurs protegit
     Client->>ResourceServer: 8. Sol·licita el recurs protegit adjuntant l'Access Token
     ResourceServer->>Client: 9. Valida el Token i retorna el recurs sol·licitat
+```
