@@ -1,7 +1,3 @@
-Aquí tienes el contenido del PDF transformado a formato Markdown, siguiendo estrictamente tus indicaciones sobre la estructura, tablas, diagramas Mermaid y el tratamiento detallado de las imágenes con descripciones técnicas.
-
-
-
 \*\*\*
 
 
@@ -513,4 +509,5 @@ graph LR
 &nbsp;RS -- "8. Valida el Token i retorna<br/>les dades protegides" --> C
 
 ```
+
 
